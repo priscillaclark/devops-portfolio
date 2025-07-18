@@ -1,6 +1,6 @@
 # 🚀 DevOps Projects
 
-This portfolio consists of five integrated and progressive DevOps projects. Each project is designed to simulate a realistic environment and demonstrate core competencies required for CloudOps, DevOps, and GitOps engineering roles.
+This portfolio consists of different integrated and progressive DevOps projects. Each project is designed to simulate a realistic environment and demonstrate core competencies required for CloudOps, DevOps, and GitOps engineering roles.
 
 ## 🔧 Tech Stack Covered
 
@@ -23,6 +23,7 @@ This portfolio consists of five integrated and progressive DevOps projects. Each
 ├── 📁 gitops-argo-k8s                    # Project 4
 ├── 📁 aws-observability-secure-costs    # Project 5
 └── README.md                            # This file
+```
 
 ---
 
