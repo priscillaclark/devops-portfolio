@@ -27,11 +27,11 @@ This portfolio consists of different integrated and progressive DevOps projects.
 
 ---
 
-| ✅ Project | Title                                              | Description                                                                                                               | 🧱 Tech Stack                                                   |
-|------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Project 1  | Modular Infrastructure on AWS with Terraform + Ansible | Provision EC2 and VPC infrastructure using Terraform, and configure instances via Ansible.                                | Terraform, Ansible, AWS EC2, VPC, GitHub Actions                |
-| Project 2  | Microservice with Docker + CI/CD                   | Build and test a containerized app with GitHub Actions. Integrate unit/lint/test stages and Docker Hub or ECR push.       | Docker, GitHub Actions, Python/Node.js, Docker Hub or ECR      |
-| Project 3  | ECS Deployment with Infrastructure as Code         | Deploy the container to AWS ECS using Terraform, load balancing with ALB and auto-scaling groups.                         | Terraform, ECS, ALB, Auto Scaling Groups, IAM                   |
-| Project 4  | GitOps with Kubernetes + ArgoCD                    | Declaratively manage Kubernetes deployments with GitOps practices, applying security and resource policies.               | Kubernetes, ArgoCD, Helm, GitHub, Kustomize                     |
-| Project 5  | Observability and Security on AWS                  | Monitor resources using CloudWatch and manage secrets, IAM roles, and cost controls programmatically.                     | CloudWatch, IAM, Secrets Manager, Cost Explorer, Boto3         |
+| Project Title                                              | Description                                                                                                               | 🧱 Tech Stack                                                   |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| Modular Infrastructure on AWS with Terraform + Ansible | Provision EC2 and VPC infrastructure using Terraform, and configure instances via Ansible.                                | Terraform, Ansible, AWS EC2, VPC, GitHub Actions                |
+| Microservice with Docker + CI/CD                   | Build and test a containerized app with GitHub Actions. Integrate unit/lint/test stages and Docker Hub or ECR push.       | Docker, GitHub Actions, Python/Node.js, Docker Hub or ECR      |
+| ECS Deployment with Infrastructure as Code         | Deploy the container to AWS ECS using Terraform, load balancing with ALB and auto-scaling groups.                         | Terraform, ECS, ALB, Auto Scaling Groups, IAM                   |
+| GitOps with Kubernetes + ArgoCD                    | Declaratively manage Kubernetes deployments with GitOps practices, applying security and resource policies.               | Kubernetes, ArgoCD, Helm, GitHub, Kustomize                     |
+| Observability and Security on AWS                  | Monitor resources using CloudWatch and manage secrets, IAM roles, and cost controls programmatically.                     | CloudWatch, IAM, Secrets Manager, Cost Explorer, Boto3         |
 
