@@ -22,7 +22,7 @@ This portfolio consists of different integrated and progressive DevOps projects.
 ├── 📁 ecs-deploy-iac                     # Project 3
 ├── 📁 gitops-argo-k8s                    # Project 4
 ├── 📁 aws-observability-secure-costs     # Project 5
-└── README.md                             # This file
+└── README.md                             
 ```
 
 ---
