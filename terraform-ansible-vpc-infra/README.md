@@ -68,6 +68,77 @@ Provide:
 - Default region (e.g., us-east-1)
 - Output format (e.g., json)
 
+<details>
+<summary>🔐 Secure your AWS credentials</summary>
+
+❗ **Never commit credentials to GitHub** 
+
+	### ✅ Safer alternatives:
+
+<details><summary>**1. Use Environment Variables** (good for local + CI/CD):**</summary>
+ 
+```bash
+  export AWS_ACCESS_KEY_ID="your_key"
+  export AWS_SECRET_ACCESS_KEY="your_secret"
+```
+<details>
+<summary>**Detailed instructions for first time use:**</summary>
+
+To persist across sessions, add them to your shell config file:
+
+```bash
+nano ~/.bashrc
+```
+# Add at the bottom:
+```
+export AWS_ACCESS_KEY_ID="your_access_key"
+export AWS_SECRET_ACCESS_KEY="your_secret_key"
+```
+Then apply:
+
+```bash
+source ~/.bashrc
+```
+Test your credentials:
+
+```bash
+aws sts get-caller-identity
+```
+Protect sensitive files:
+
+Create a .gitignore and add:
+
+```bash
+.env
+*.tfvars
+*.pem
+```
+
+🔴 Never store secrets directly in your code!
+
+</details>
+</details>
+
+
+</details>
+<details><summary>**2. Use .tfvars file (add to .gitignore):**</summary>
+```hcl
+aws_access_key = "your_key"
+aws_secret_key = "your_secret"
+```
+</details>
+<details><summary>**3. Named profiles in ~/.aws/credentials:**</summary>
+
+```ini
+[default]
+aws_access_key_id = your_key
+aws_secret_access_key = your_secret
+```
+</details>
+<details><summary>**4. IAM Roles for EC2 or GitHub Actions (recommended in production)**</summary>
+
+</details>
+
 **3. Terraform Installed**
 
 ```bash
