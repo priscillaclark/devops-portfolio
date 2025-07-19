@@ -155,11 +155,20 @@ Check if one exists:
 ```bash
 ls ~/.ssh/id_rsa.pub
 ```
+
+- ls = list files
+- ~/.ssh/ = a hidden folder in your home where SSH keys are usually stored.
+- id_rsa.pub = your public key (the one you share, not secret)
+
 If not, generate:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
+- ssh-keygen = a tool to create a new SSH key
+- -t rsa = use the RSA type of key (a common and secure kind)
+- -b 4096 = make the key 4096 bits long (very strong)
+- -C "your_email@example.com" = add a label so you know whose key it is (your email)
 
 Upload your key to AWS Console → EC2 → Key Pairs → Import Key Pair → Paste contents of ~/.ssh/id_rsa.pub
 
