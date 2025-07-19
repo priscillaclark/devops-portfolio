@@ -40,8 +40,9 @@ A reusable and modular AWS environment for development/testing, including:
 │       └── terraform.yml
 ├── README.md
 ```
+---
 
-## Prerequisites
+## 🔧 Prerequisites
 
 - AWS account
 - AWS CLI configured with credentials
@@ -49,8 +50,7 @@ A reusable and modular AWS environment for development/testing, including:
 - Ansible installed (or via Docker)
 - SSH key available for remote access
 
-<details>
-<summary>🔧 Prerequisites Checklist and Setup Guide (for Windows Subsystem for Linux)</summary>
+### Prerequisites Checklist and Setup Guide (for Windows Subsystem for Linux)
 
 **1. AWS Account (Free Tier)** 
 - Sign up: https://aws.amazon.com/free/ 
@@ -69,74 +69,67 @@ Provide:
 - Output format (e.g., json)
 
 <details>
-<summary>🔐 Secure your AWS credentials</summary>
+<summary> 🔐 Secure your AWS credentials</summary>
 
-❗ **Never commit credentials to GitHub** 
-
-	### ✅ Safer alternatives:
-
-<details><summary>**1. Use Environment Variables** (good for local + CI/CD):**</summary>
+   - Use Environment Variables (good for local + CI/CD):
  
-```bash
+```
   export AWS_ACCESS_KEY_ID="your_key"
   export AWS_SECRET_ACCESS_KEY="your_secret"
 ```
 <details>
-<summary>**Detailed instructions for first time use:**</summary>
+<summary>      To persist across sessions, add them to your shell config file: </summary>
 
-To persist across sessions, add them to your shell config file:
 
-```bash
+```
 nano ~/.bashrc
 ```
-# Add at the bottom:
+Add at the bottom:
 ```
 export AWS_ACCESS_KEY_ID="your_access_key"
 export AWS_SECRET_ACCESS_KEY="your_secret_key"
 ```
 Then apply:
 
-```bash
+```
 source ~/.bashrc
 ```
 Test your credentials:
 
-```bash
+```
 aws sts get-caller-identity
 ```
 Protect sensitive files:
 
 Create a .gitignore and add:
 
-```bash
+```
 .env
 *.tfvars
 *.pem
 ```
 
-🔴 Never store secrets directly in your code!
+> 🔴 Never store secrets directly in your code!
 
-</details>
+---
 </details>
 
-
-</details>
-<details><summary>**2. Use .tfvars file (add to .gitignore):**</summary>
+   - Use .tfvars file (add to .gitignore):
+   
 ```hcl
 aws_access_key = "your_key"
 aws_secret_key = "your_secret"
 ```
-</details>
-<details><summary>**3. Named profiles in ~/.aws/credentials:**</summary>
+
+   - Use Named profiles in ~/.aws/credentials:
 
 ```ini
 [default]
 aws_access_key_id = your_key
 aws_secret_access_key = your_secret
 ```
-</details>
-<details><summary>**4. IAM Roles for EC2 or GitHub Actions (recommended in production)**</summary>
-
+   - Use IAM Roles for EC2 or GitHub Actions (recommended in production)
+---
 </details>
 
 **3. Terraform Installed**
@@ -178,12 +171,11 @@ git --version
 ```
 </details> 
 
-<details>
-  <summary>📎 Additional Resources</summary>
+📎 Additional Resources
 
 - [Terraform Docs](https://developer.hashicorp.com/terraform/docs)  
 - [Ansible Docs](https://docs.ansible.com/)  
 - [AWS Free Tier](https://aws.amazon.com/free/)
 
-</details>
+
 
